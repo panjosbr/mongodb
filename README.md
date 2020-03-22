@@ -5,7 +5,7 @@ db.createCollection("alunos")
 # Inserir dados em uma coleção
 
 - COM aspas duplas
-
+```javascript
 db.alunos.insert(
     {
         "nome" : "Fulano",
@@ -26,8 +26,10 @@ db.alunos.insert(
         ]
     }
 )
+```
 
 - SEM aspas duplas
+```javascript
 db.alunos.insert(
     {
         nome : "Fulana",
@@ -48,13 +50,23 @@ db.alunos.insert(
         ]
     }
 )
+```
 
 ## buscar alunos
 
+```javascript
 db.alunos.find()
+```
+- retorno
+```javascript
+{ "_id" : ObjectId("5e76bb81ae0c3948dcd9d879"), "nome" : "Fulano", "data_nascimento" : ISODate("1990-12-01T03:00:00Z"), "curso" : { "nome" : "Ciência da Computação" }, "notas" : [ 10, 9, 4.5 ], "habilidades" : [ { "nome" : "inglês", "nível" : "intermediario" }, { "nome" : "xadrez", "nível" : "avançado" } ] }
+
+```
 
 ## remover alunos
 
+```javascript
 db.alunos.remove({
-    "_id" : ObjectId("5e76bae0ae0c3948dcd9d878")
+    "_id" : ObjectId("5e76bb81ae0c3948dcd9d879")
 })
+```
