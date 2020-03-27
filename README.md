@@ -1,6 +1,15 @@
+# start server mongo
+
+```bash
+$ cd mongodbPath/db
+$ mongod
+```
+
 # Criar um coleção
 
+```javascript
 db.createCollection("alunos")
+```
 
 # Inserir dados em uma coleção
 
