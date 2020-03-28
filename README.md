@@ -1,8 +1,13 @@
 # start server mongo
 
 ```bash
-$ cd mongodbPath/db
+$ mkdir db
+$ cd db/
 $ mongod
+
+ou
+
+$ mongod --dbpath <path>/db
 ```
 
 # Criar um coleção
