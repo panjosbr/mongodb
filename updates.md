@@ -44,3 +44,31 @@ db.alunos.update(
     }
 )
 ```
+
+## Update by ID - adicionando um novo valor em um array
+
+```javascript
+db.alunos.update(
+    {"_id" : ObjectId("5e76bb81ae0c3948dcd9d879")},
+    {
+        $push : {
+            "notas" : 8.5
+        }
+    }
+)
+```
+
+## Update by ID - adicionando mais de um valor em um array
+
+```javascript
+db.alunos.update(
+    {"_id" : ObjectId("5e76bb81ae0c3948dcd9d879")},
+    {
+        $push : {
+            "notas" : {
+                $each : [8.5, 3]
+            }
+        }
+    }
+)
+```
