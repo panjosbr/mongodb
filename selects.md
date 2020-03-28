@@ -1,11 +1,11 @@
 ## Formata em json a busca
-```
+```javascript
 db.alunos.find().pretty()
 ```
 
 ## Filtrar com uma condição
 
-```
+```javascript
 db.alunos.find(
     {
         "nome" : "Panjos"
@@ -15,7 +15,7 @@ db.alunos.find(
 
 ## Filtrar com duas condições (semelhante ao join em sql)
 
-```
+```javascript
 db.alunos.find(
     {
         "nome" : "Panjos",
@@ -26,7 +26,7 @@ db.alunos.find(
 
 ## Consultas com OR
 
-```
+```javascript
 db.alunos.find({
     $or : [
         {"curso.nome" : "Jogos digitais"},
@@ -37,7 +37,7 @@ db.alunos.find({
 
 ## Consultas com OR e AND
 
-```
+```javascript
 db.alunos.find({
     $or : [
         {"curso.nome" : "Jogos digitais"},
@@ -49,7 +49,7 @@ db.alunos.find({
 
 ## Consultas com IN
 
-```
+```javascript
 db.alunos.find({
     "curso.nome": {
         $in: [

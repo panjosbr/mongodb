@@ -1,20 +1,15 @@
-```json
+```javascript
 {
-    "nome" : "Panjos 2",
-    "data_nascimento" : new Date(1990, 10, 31),
+    "nome" : "Daniel",
+    "data_nascimento" : new Date(1988, 03, 08),
+    "notas" : [10, 4.5, 7],
     "curso" : {
-        "nome" : "Jogos digitais",
+        "nome" : "Ciência da Computação",
     },
-    "habilidades" : [
-        {
-            "nome" : "ingles",
-            "nivel" : "avancado"
-        }
-    ]
 }
 ```
 
-```json
+```javascript
 {
     "nome" : "Fulano",
     "data_nascimento" : new Date(1980, 02, 01),
