@@ -16,10 +16,10 @@
 
 ```json
 {
-    "nome" : "Cicrano",
-    "data_nascimento" : new Date(1980, 01, 01),
+    "nome" : "Fulano",
+    "data_nascimento" : new Date(1980, 02, 01),
     "curso" : {
-        "nome" : "Engenharia",
+        "nome" : "Ciências da Computação",
     },
     "habilidades" : [
         {

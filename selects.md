@@ -23,3 +23,40 @@ db.alunos.find(
     }
 ).pretty()
 ```
+
+## Consultas com OR
+
+```
+db.alunos.find({
+    $or : [
+        {"curso.nome" : "Jogos digitais"},
+        {"curso.nome" : "Ciência da Computação"},
+    ],
+}).pretty()
+```
+
+## Consultas com OR e AND
+
+```
+db.alunos.find({
+    $or : [
+        {"curso.nome" : "Jogos digitais"},
+        {"curso.nome" : "Ciência da Computação"},
+    ],
+    "nome" : "Paulo"
+}).pretty()
+```
+
+## Consultas com IN
+
+```
+db.alunos.find({
+    "curso.nome": {
+        $in: [
+            "Ciência da Computação",
+            "Jogos digitais",
+            "Biomedicina"
+        ],
+    },
+}).pretty()
+```
