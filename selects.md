@@ -1,3 +1,5 @@
+*Alguns seletores: https://docs.mongodb.com/manual/reference/operator/query/#query-selectors
+
 ## Formata em json a busca
 ```javascript
 db.alunos.find().pretty()
@@ -67,6 +69,15 @@ db.alunos.find({
 db.alunos.find(
     {
         "notas" : { $gt : 5 }
+    }
+)
+
+## Consultas > - menor que - less than
+
+```javascript
+db.alunos.find(
+    {
+        "notas" : { $lt : 5 }
     }
 )
 ```
