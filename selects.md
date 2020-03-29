@@ -73,6 +73,23 @@ db.alunos.find(
 
 ## Consultar apenas um
 
+```javascript
 db.alunos.findOne({
     "notas" : { $gt : 5 }
 })
+```
+
+## Consulta com OrderBy
+
+- 1 para crescente
+- -1 decrescente
+
+```javascript
+db.alunos.find().sort({"nome" : 1})
+```
+
+## Consulta com OrderBy com limite
+
+```javascript
+db.alunos.find().sort({"nome" : 1}).limit(3)
+```
