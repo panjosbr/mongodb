@@ -60,3 +60,19 @@ db.alunos.find({
     },
 }).pretty()
 ```
+
+## Consultas > - maior que - greater than
+
+```javascript
+db.alunos.find(
+    {
+        "notas" : { $gt : 5 }
+    }
+)
+```
+
+## Consultar apenas um
+
+db.alunos.findOne({
+    "notas" : { $gt : 5 }
+})
